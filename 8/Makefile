@@ -6,7 +6,7 @@
 #-----------------------------------------------------------------------------
 
 # name of container
-IMAGE_NAME = docker.adorsys.de/alpine/openjdk8-base
+IMAGE_NAME = adorsys/openjdk-build-base:8
 
 #-----------------------------------------------------------------------------
 # default target
