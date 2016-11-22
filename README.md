@@ -1,4 +1,4 @@
-# opendjdk-build-base
+# openjdk-build-base
 Base image with JDK and maven for build related tasks. This image is based on alpine linux.
 
 ## Note
