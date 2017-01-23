@@ -1,4 +1,4 @@
-FROM adorsys/alpine-base:3.4
+FROM adorsys/alpine-base:3.5
 MAINTAINER https://github.com/adorsys/dockerhub-openjdk-build-base
 
 ENV M2_HOME /usr/local/apache-maven/apache-maven-3.3.9
