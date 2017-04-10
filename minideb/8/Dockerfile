@@ -8,7 +8,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 ENV JAVA_TOOL_OPTIONS -Xmx128M
 
 RUN mkdir $HOME/.m2 && \
-    install_packages -t jessie-backports openjdk-8-jdk-headless wget && \
+    install_packages -t jessie-backports git make openjdk-8-jdk-headless wget && \
     # https://bugs.launchpad.net/ubuntu/+source/ca-certificates-java/+bug/1396760
     # fix certs for jdk (java.security.InvalidAlgorithmParameterException:
     # the trustAnchors parameter must be non-empty)

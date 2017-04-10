@@ -8,7 +8,7 @@ ENV JAVA_HOME /usr/lib/jvm/default-jvm
 ENV JAVA_TOOL_OPTIONS -Xmx128M
 
 RUN mkdir $HOME/.m2 && \
-    apk -q --no-cache add openjdk8 && \
+    apk -q --no-cache add git make openjdk8 && \
     mkdir /usr/local/apache-maven && \
     wget $M2_URL -q -O - | tar -xz -C /usr/local/apache-maven/ && \
     ln -s $M2_HOME/bin/mvn /usr/local/bin/mvn && \
