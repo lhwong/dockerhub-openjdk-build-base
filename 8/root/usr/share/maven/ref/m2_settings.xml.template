@@ -6,16 +6,16 @@
   <servers>
     <server>
       <id>mirror</id>
-      <username>${MIRROR_USER}</username>
-      <password>${MIRROR_PASS}</password>
+      <username>${MAVEN_MIRROR_USER}</username>
+      <password>${MAVEN_MIRROR_PASS}</password>
     </server>
   </servers>
 
   <mirrors>
     <mirror>
       <id>mirror</id>
-      <name>${MIRROR_URL}</name>
-      <url>${MIRROR_URL}</url>
+      <name>${MAVEN_MIRROR_URL}</name>
+      <url>${MAVEN_MIRROR_URL}</url>
       <mirrorOf>central</mirrorOf>
     </mirror>
   </mirrors>
