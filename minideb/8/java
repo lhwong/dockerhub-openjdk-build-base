@@ -1,6 +1,6 @@
 #!/bin/sh
 
-printf '\033[31m ------> THIS IMAGE IS DEPRECATED. USE image adorsys/ci-build inside Gitlab CI OR adorsys/java:8 for runtime,\n ------> DockerHub: https://hub.docker.com/r/adorsys/ci-build/ https://hub.docker.com/r/adorsys/java/ \n ------> Github: https://github.com/adorsys\033[0m\n'
+printf '\033[31m ------> THIS IMAGE IS DEPRECATED. USE image adorsys/ci-build inside Gitlab CI OR adorsys/java:8 for runtime,\n ------> DockerHub: https://hub.docker.com/r/adorsys/ci-build/ https://hub.docker.com/r/adorsys/java/ \n ------> Github: https://github.com/adorsys/dockerhub-pipeline-images\033[0m\n'
 sleep 300
 
 exec /usr/bin/java "$@"

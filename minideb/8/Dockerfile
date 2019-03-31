@@ -5,6 +5,7 @@ ENV JAVACMD /usr/local/bin/java
 ONBUILD RUN printf '\033[31m ------> THIS IMAGE IS DEPRECATED. USE image adorsys/ci-build inside Gitlab CI\n ------> DockerHub: https://hub.docker.com/r/adorsys/ci-build/\n ------> Github: https://github.com/adorsys/dockerhub-pipeline-images\n\n Questions? Ask in #dev or #ops\033[0m\n' && sleep 300
 
 COPY java /usr/local/bin/java
+COPY mvn /usr/local/bin/mvn
 
 MAINTAINER https://github.com/adorsys/dockerhub-openjdk-build-base
 
@@ -22,5 +23,4 @@ RUN mkdir $HOME/.m2 && \
     /var/lib/dpkg/info/ca-certificates-java.postinst configure && \
     mkdir /usr/local/apache-maven && \
     wget $M2_URL -q -O - | tar -xz -C /usr/local/apache-maven/ && \
-    ln -s $M2_HOME/bin/mvn /usr/local/bin/mvn && \
     ln -sf $JAVA_HOME/bin/* /usr/bin/
