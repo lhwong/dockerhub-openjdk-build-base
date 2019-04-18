@@ -2,7 +2,7 @@ FROM adorsys/alpine-base:3.5
 
 ENV JAVACMD /usr/local/bin/java
 
-ONBUILD RUN printf '\033[31m ------> THIS IMAGE IS DEPRECATED. USE image adorsys/ci-build inside Gitlab CI\n ------> DockerHub: https://hub.docker.com/r/adorsys/ci-build/\n ------> Github: https://github.com/adorsys/dockerhub-pipeline-images\n\n Questions? Ask in #dev or #ops\033[0m\n' && sleep 300
+ONBUILD RUN printf '\033[31m ------> THIS IMAGE IS DEPRECATED. USE image adorsys/ci-build inside Gitlab CI\n ------> DockerHub: https://hub.docker.com/r/adorsys/ci-build/\n ------> Github: https://github.com/adorsys/dockerhub-pipeline-images\n\n Questions? Ask in #dev or #ops\033[0m\n' && sleep 600
 
 COPY java /usr/local/bin/java
 COPY mvn /usr/local/bin/mvn
@@ -11,7 +11,6 @@ MAINTAINER https://github.com/adorsys/dockerhub-openjdk-build-base
 
 ENV M2_HOME /usr/local/apache-maven/apache-maven-3.3.9
 ENV M2_URL http://artfiles.org/apache.org/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
-ENV JAVA_HOME /usr/lib/jvm/default-jvm
 # limit java processes to 128M heap by default
 ENV JAVA_TOOL_OPTIONS -Xmx128M
 
