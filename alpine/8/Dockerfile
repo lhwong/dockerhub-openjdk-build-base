@@ -1,4 +1,4 @@
-FROM adorsys/alpine-base:3.5
+FROM lhwong/alpine-base:3.5
 
 ENV JAVACMD /usr/local/bin/java
 
